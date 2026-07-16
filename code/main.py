@@ -1,3 +1,6 @@
-import Functions.miniplayer as mp
-import Functions.HID as hid
+import functions.miniplayer as mp
+import functions.HID as hid
 import time
+
+
+mp.initialize()

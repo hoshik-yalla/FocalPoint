@@ -1,0 +1,9 @@
+{
+  "python.pythonPath": "C:\\Users\\prasa\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+  "python.defaultInterpreterPath": "C:\\Users\\prasa\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+  "python.analysis.extraPaths": [
+    "C:\\Users\\prasa\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311",
+    "C:\\Users\\prasa\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages"
+  ],
+  "python.analysis.autoSearchPaths": true
+}
