@@ -18,3 +18,5 @@ window = webview.create_window("Test Window",
                           zoomable=False,
                           focus=False,
                           js_api=Api())
+
+initialize()
