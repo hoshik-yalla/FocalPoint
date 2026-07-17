@@ -1,19 +1,28 @@
-from pynput import mouse, keyboard
+from pynput import mouse
+import keyboard
 import time
 
-mouse = mouse.Controller()
+mousy = mouse.Controller()
 
 def mouse_activity():
     #Mouse Position
-    ps1 = mouse.position
-    time.sleep(2)
-    ps2 = mouse.position
-        
+    ps1 = mousy.position
+    time.sleep(5)
+    ps2 = mousy.position
     #Logic
     if ps1 != ps2:
-        status = "Active"
+        return True
     else:
-        status = "Inactive"
+        return False
+
 
 def key_activity():
-    status = False
+    fired = False
+
+    def handler(_):
+        nonlocal fired
+        fired = True
+    hook = keyboard.hook(handler)
+    time.sleep(5)
+    keyboard.unhook(hook)
+    return fired

@@ -14,10 +14,11 @@ document.addEventListener('mouseleave', function() {
 })
 
 
-//Fire Logic
+//Fire & HP Logic
 const fire = document.getElementById("fire");
 function state(health) {
-    //blurry fire
+    document.getElementById("dead").innerHTML = health + " HP";
+
     if (health >= 80 && health <= 100) {
         fire.style.transition = "filter 2s";
         fire.style.filter = "saturate(2.3)";
@@ -39,8 +40,12 @@ function state(health) {
     if (health < 1) {
         document.body.style.backgroundColor = "rgb(92, 92, 92)"
         fire.src = "fire-dead.gif"
-        fire.style.marginTop = "155px"
+        fire.style.marginTop = "130px"
         fire.style.filter = "saturate(0.5)"
-        document.getElementById("dead").style.visibility = "visible"
+        document.getElementById("dead").innerHTML = "DEAD";
     }
+}
+
+function survived() {
+    document.getElementById("dead").innerHTML = "SURVIVED";
 }

@@ -15,7 +15,7 @@ def init():
 
     return windows
 
-def run():
+def menu():
     pch = init()
     toutput = []
     houtput = []
@@ -23,3 +23,6 @@ def run():
         toutput.append(title)
         houtput.append(hwnd)
     return toutput, houtput
+
+def get_focus(hwnd):
+    return (hwnd == win32gui.GetForegroundWindow())
