@@ -1,6 +1,6 @@
-import functions.miniplayer as mp
-import functions.HID as hid
-import functions.window as window
+import components.miniplayer as mp
+import components.HID as hid
+import components.window as window
 import threading
 import time
 
