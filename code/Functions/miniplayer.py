@@ -1,10 +1,8 @@
 import webview
 
-start = False
-
 class Api():
     def destroy(self):
-        print("API Received")
+        print("Session Ended")
         if window != None:
             window.destroy()
 
@@ -22,8 +20,8 @@ def survived():
         window.run_js("survived()")
 
 
-window = webview.create_window("Test Window", 
-                          "http://127.0.0.1:5500/code/miniplayer/index.html",
+window = webview.create_window("FocalPoint - Miniplayer", 
+                          "miniplayer/index.html",
                           width=300, height=310, 
                           transparent=True, 
                           frameless=True,

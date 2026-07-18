@@ -20,7 +20,9 @@ def FocusSession(hwnd, duration,threshold):
      #Mainframe loop
      print("Session started")
      while elapsed < duration:
-          hid_activity = hid.mouse_activity() or hid.key_activity()
+          mouse_activity = hid.mouse_activity()
+          key_activity = hid.key_activity()
+          hid_activity = mouse_activity or key_activity
           window_focus = window.get_focus(hwnd)
           elapsed += 10
 
