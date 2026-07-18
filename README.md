@@ -8,7 +8,18 @@ Unlike traditional Pomodoro timers, FocalPoint introduces consequences. Losing f
 
 
 ## Usage
+
+[Demo Video](https://youtu.be/ADfgo_LLXdI)
+
+1. Clone the repo <br>
+    ```
+    git clone https://github.com/hoshik-yalla/FocalPoint.git
+    ```
+
 1. Install the necessary dependencies using the command below <br>
+    ```
+    cd FocalPoint
+    ```
     ```
     pip install -r requirements.txt
     ```
@@ -41,23 +52,6 @@ If you hit 0 HP, the campfire dies and the session ends... no checkpoints, no pr
 
 - Under the hood: the application uses pyinput, keyboard and win32gui API to access HID activity and the windows active on the device. Primarily, pywebview is used to serve the campfire interface and handle communication between python and JS via its API class.
 
-## AI Usage and declaration
-ChatGPT was used for researching researching libraries and implementation approaches, dependencies, correcting typos/grammer in markdown files, and generating file trees to stay organized.
-
-1. By case uses:
-    - **Issue**: Pylance was operating with misconfigured python environment so any packages installed for this application wasn't being recognized.
-    <br>
-    **Fix**: Copilot access this workspace's settings file and fixed the issue.
-
-    
-    - **Issue**: Since pywebview's windows run on a loop based system, the code after the miniplayer wouldn't get executed. So I programmed it to run on a seperate thread. However, pywebview requires its windows to be run on the main thread.
-    <br>
-    **Fix**: Copilot moved the session logic into a secondary thread to reserver the main thread for pywebview. I specifically instructed it to avoid modifying the logic in any way or trying to "imrpove" the code.
-
-    - Copilot was instructed to commit and push the repo as is and then proceed to program endpoints across the codebase to catch any potential bugs in the app. Once the tests are done. I would revert changes back to the latest commit and then start implementing the fixes.
-
-Although AI was used in this project, I took necessary measures to ensure that the agent didn't contribute to the core logic and application flow.
-
 ## Roadmap
 
 - [x] Window selection
@@ -68,3 +62,23 @@ Although AI was used in this project, I took necessary measures to ensure that t
 - [ ] MacOS/Linus Support
 - [ ] Multi-window selection
 - More coming soon...
+
+## Want to contribute?
+As a solo-programmer I might not have tested all the use cases this application contains, so feel free to contribute to the source code or opening an issue. I will try my best to review them and take action.
+
+## AI Usage and declaration
+ChatGPT was used for researching researching libraries and implementation approaches, dependencies, correcting typos/grammer in markdown files, and generating file trees to stay organized.
+
+1. By case uses:
+    - **Issue**: Pylance was operating with misconfigured python environment so any packages installed for this application wasn't being recognized.
+    <br>
+    Fix: Copilot access this workspace's settings file and fixed the issue.
+
+    
+    - **Issue**: Since pywebview's windows run on a loop based system, the code after the miniplayer wouldn't get executed. So I programmed it to run on a seperate thread. However, pywebview requires its windows to be run on the main thread.
+    <br>
+    Fix: Copilot moved the session logic into a secondary thread to reserver the main thread for pywebview. I specifically instructed it to avoid modifying the logic in any way or trying to "imrpove" the code.
+
+    - Copilot was instructed to commit and push the repo as is and then proceed to program endpoints across the codebase to catch any potential bugs in the app. Once the tests are done. I would revert changes back to the latest commit and then start implementing the fixes.
+
+Although AI was used in this project, I took necessary measures to ensure that the agent didn't contribute to the core logic and application flow.
