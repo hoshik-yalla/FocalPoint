@@ -20,19 +20,19 @@ function state(health) {
     document.getElementById("dead").innerHTML = health + " HP";
 
     if (health >= 80 && health <= 100) {
-        fire.style.transition = "filter 2s";
+        fire.style.transition = "filter 4s";
         fire.style.filter = "saturate(2.3)";
     }
     if (health < 80 && health >= 60) {
-        fire.style.transition = "filter 2s";
+        fire.style.transition = "filter 4s";
         fire.style.filter = "saturate(1.5) blur(3px)";
     }
     if (health < 60 && health >= 30) {
-        fire.style.transition = "filter 2s";
+        fire.style.transition = "filter 4s";
         fire.style.filter = "blur(5px) brightness(0.7)";
     }
     if (health < 30 && health >= 1) {
-        fire.style.transition = "filter width height 2s";
+        fire.style.transition = "filter width height 4s";
         fire.style.filter = "blur(6px) brightness(0.4)";
         fire.style.maxWidth = "70%";
         fire.style.maxHeight = "70%";

@@ -18,7 +18,6 @@ def mouse_activity():
 
 def key_activity():
     fired = False
-
     def handler(_):
         nonlocal fired
         fired = True
