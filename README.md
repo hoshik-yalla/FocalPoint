@@ -4,12 +4,16 @@ FocalPoint is an open-source Windows desktop application that encourages deep wo
 ## Why a campfire?
 Unlike traditional Pomodoro timers, FocalPoint introduces consequences. Losing focus weakens the campfire, creating continuous feedback instead of simply counting down a timer.
 
-**NOTE:** This app is only programmed and tested on Microsoft Windows 11, Python v3.11.9
-
-
-## Usage
+**NOTE:** This app is programmed and tested on Microsoft Windows 11, Python v3.11.9
 
 [Demo Video](https://youtu.be/ADfgo_LLXdI)
+
+## Usage (exe file)
+1. Download the zip file in the **releases**.
+2. Extract the zip file and run the exe file. <br>
+**NOTE:** If you come across any issues when running the exe file, please open an issue and I will reach out as soon as possible. I didn't come across any issues during build/testing.
+
+## Usage (By Source Code)
 
 1. Clone the repo <br>
     ```
