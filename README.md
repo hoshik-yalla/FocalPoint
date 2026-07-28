@@ -6,7 +6,12 @@ Unlike traditional Pomodoro timers, FocalPoint introduces consequences. Losing f
 
 **NOTE:** This app is programmed and tested on Microsoft Windows 11, Python v3.11.9
 
-[Demo Video](https://youtu.be/ADfgo_LLXdI)
+## Demo
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=ADfgo_LLXdI">
+    <img src="https://img.youtube.com/vi/ADfgo_LLXdI/0.jpg" alt="Demo Video">
+  </a>
+</p>
 
 ## Usage (exe file)
 1. Download the zip file in the **releases**.
