@@ -1,5 +1,6 @@
+import os
+import sys
 import webview
-from flask import Flask
 
 class Api():
     def destroy(self):
@@ -7,14 +8,17 @@ class Api():
         if window != None:
             window.destroy()
 
+
 def initialize(on_ready=None):
     webview.start(on_ready)
+
 
 def update_activity(health):
     payload = "state("+str(health)+")"
     if window != None:
         window.run_js(payload)
     return "heartbeat sent"
+
 
 def survived():
     if window != None:

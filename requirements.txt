@@ -1,4 +1,0 @@
-pynput
-pywebview
-pywin32
-keyboard
